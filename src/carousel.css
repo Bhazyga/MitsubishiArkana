@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+
+@media screen and (max-width: 777px) {
+  .nursyifa-leftCard {
+    display: none;
+  }
+
+  .nursyifa-rightCard {
+    display: none;
+  }
+}
+
+.nursyifa-carousel-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.nursyifa-avatars {
+  border-radius: 50%;
+  height: 100px;
+  margin-top: -6em;
+}
+
+.nursyifa-cards {
+  display: flex;
+  width: 100%;
+}
+
+.nursyifa-card {
+  margin: 5em 2em 0em;
+  background-color: rgb(187, 222, 144);
+  padding: 2em;
+  width: 35%;
+  height: 200px;
+  flex: 1; /* each card is of equal size */
+  box-shadow: 6px 6px 17px 1px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 6px 6px 17px 1px rgba(0, 0, 0, 0.36);
+}
+
+.nursyifa-leftCard {
+  margin-right: -15em;
+  margin-top: 7em;
+}
+
+.nursyifa-rightCard {
+  margin-left: -15em;
+  margin-top: 7em;
+}
+
+.nursyifa-active {
+  z-index: 1;
+  height: 250px;
+  background-image: url("../assets/quote-left.svg"), url("../assets/quote-right.svg");
+  background-repeat: no-repeat;
+  background-position-x: 0, right;
+  background-position-y: 0, bottom;
+  background-size: 50px;
+  background-origin: content-box;
+}
+
+.nursyifa-arrow-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -10em;
+  position: relative;
+}
+
+.nursyifa-arrow {
+  height: 3em;
+}
+
+.nursyifa-arrow:active {
+  fill: lightgray;
+}
+
+.nursyifa-name {
+  margin-top: 0.5em;
+  margin-bottom: -0.2em;
+}
+
+nursyifa-p {
+  padding: 0em 3em;
+}
+
+.nursyifa-text {
+  height: 90%;
+  overflow: hidden;
+}
+
+.nursyifa-tracker {
+  display: flex;
+  justify-content: center;
+  height: 2.5em;
+  margin-top: 1em;
+}
+
+.nursyifa-circle {
+  transform: scale(0.3);
+}
+
+.nursyifa-viewAll {
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  height: 2em;
+  width: 20%;
+  font-weight: bold;
+  margin: 2em auto;
+  box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.36);
+}
+
+.nursyifa-viewAll:hover {
+  background-color: lightgray;
+}
+
+.nursyifa-viewAll:active {
+  background-color: grey;
+}
